@@ -1,0 +1,240 @@
+
+<h1 class="rss-header">RSS Approvals</h1>
+<div>
+    <div id="test" style="margin: auto 50%;">
+        <div class="lds-css ng-scope" data-bind="visible: loadingData">
+            <div style="width:100%;height:100%" class="lds-eclipse">
+              <div></div>
+            </div>
+        </div>
+    </div>
+  <!-- <span class="oj-fwk-icon oj-fwk-icon-load" data-bind="visible: loadingData"></span> -->
+<!-- <div class="rss-switch">
+  <oj-switch id="switch" on-value-changed="[[valueChangedListener]]" value="{{pendingOnly}}"></oj-switch>
+  <oj-label class="oj-label oj-label-inline pending-txt-false" for="switch">Pending Only</oj-label>
+</div> -->
+  <oj-list-view id="listview" data-bind="visible: itemNotSelected" aria-label="list using array" selection="{{selectedItem}}" data="{{dataProvider}}" on-click="[[loadSelected]]"
+    item.renderer="[[oj.KnockoutTemplateUtils.getRenderer('server_template', true)]]" selection-mode="single">
+  </oj-list-view>
+
+  <div id="dialogWrapper">
+      <oj-dialog style="display:none;width: 100%;" id="modalDialog1">
+
+          <div class="oj-flex user-prefs-wrapper">
+              <div class="oj-flex-item oj-md-flex-direction-column approve-box-side-column oj-sm-only-hide"></div>
+            <div class="oj-md-flex-direction-column oj-flex-item approve-box">
+                <div slot="body" style="width:100%;">
+                    <span class="oj-fwk-icon oj-fwk-icon-load" data-bind="visible: loadingData"></span>
+                    <button class="backBtn">BACK</button><br><br>
+                    <h1 class="ar-heading">Approve / Reject</h1>
+                    <oj-accordion id="accordionPage">
+                      <oj-collapsible id="c1" expanded>
+                        <span slot="header"><span><i class="far fa-check-circle"></i>Requisition</span></span>
+                            <table width="100%">
+                              <tbody>
+                                <tr>
+                                  <td class="head-title-td">
+                                    <strong>TITLE<strong></strong>
+                                  </strong>
+                                </td>
+                                <td class="head-value-td"><strong>VALUE<strong></strong></strong>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="title-td" data-bind="text:reqTitletit"></td>
+                                <td class="value-td" data-bind="text:reqTitleval"></td>
+                              </tr>
+                              <tr>
+                                <td class="title-td" data-bind="text: reqNumtit"></td>
+                                <td class="value-td" data-bind="text: reqNumval"></td>
+                              </tr>
+                             
+                              <tr>
+                                <td class="title-td">Project Code</td>
+                                <td class="value-td" data-bind="text: projectCode"></td>
+                              </tr>
+                              <tr>
+                                <td class="title-td">Amount</td>
+                                <td class="value-td" data-bind="text: orderAmountval"></td>
+                              </tr>
+                              <tr>
+                                <td class="title-td">Requisition Date</td>
+                                <td class="value-td" data-bind="text: startDateval"></td>
+                              </tr>
+                              <tr>
+                                <!-- <td class="title-td" data-bind="text: originatortit"></td> -->
+                                <td class="title-td">Requested By</td>
+                                <td class="value-td" data-bind="text: originatorval"></td>
+                              </tr>
+                              
+
+   
+                            </tbody>
+                          </table>
+                          <h1 class="detail-heading">Detail Information</h1>
+                          <div class- "oj-panel oj-panel-alt1">
+                            <oj-table id='table' aria-label='Departments Table' data='[[dataprovider2]]' columns-default.sortable='disabled' columns='[{"headerText": "Description", 
+                                                                             "field": "sDescription_22"
+                                                                             },
+                                                                             {"headerText": "Qty Ordered", 
+                                                                             "field": "mnQuantityOrdered_23"
+                                                                             },
+                                                                             {"headerText": "UoM", 
+                                                                             "field": "sTrUoM_24"
+                                                                             },
+                                                                             {"headerText": "Ext Amount", 
+                                                                             "field": "mnExtendedAmount_27"
+                                                                             },
+                                                                             {"headerText": "Status", 
+                                                                             "field": "sLineStatus_44"
+                                                                             },
+                                                                             {"headerText": "Supplier", 
+                                                                             "field": "mnSupplierNumber_68"
+                                                                             },
+                                                                             {"headerText": "Supplier Name", 
+                                                                             "field": "sSupplierName_69"
+                                                                             },
+                                                                             {"headerText": "Currency Code", 
+                                                                             "field": "sCurrencyCode_75"
+                                                                             }]' style='width: 100%;overflow:scroll'>
+                            </oj-table>
+                          </div>
+                          
+                          
+                          <!-- <div style="width:100%;overflow:scroll" data-bind="html: modalData">
+                            <table>
+                              <tr><td data-bind="foreach: orderdetails">{{title}}</td></tr>
+                            </table>
+                          </div> -->
+                          <h1 style="margin-top: 25px;" class="att-heading">Attachments</h1>
+                          <div data-bind="html: attachmentButtons"></div>
+                          <div style="margin-bottom: 25px;" data-bind="visible: noAttachmentsFound">No attachments found</div>
+                    <!-- <div id="attachments"></div> -->
+                      <!-- <oj-button id="download" style="width:100%" data-bind="click: downloadMediaObject">
+                        <span slot='startIcon' style="color:black" class="oj-fwk-icon oj-fwk-icon-document"></span> 
+                        Download PDF </oj-button> -->
+              
+              <!-- <oj-file-picker accept="[[acceptArr]]" selection-mode="[[multipleStr]]" on-select='[[selectListener]]'>
+                              <br>
+                            </oj-file-picker> -->
+                      </oj-collapsible>
+                      <!-- <oj-collapsible id="c2">
+                        <span slot="header"><i class="fas fa-user"></i>Additional Info</span>
+                            <table width="100%">
+                              <tbody>
+                                <tr>
+                                  <td class="head-title-td">
+                                    <strong>TITLE<strong></strong>
+                                  </strong>
+                                </td>
+                                <td class="head-value-td"><strong>VALUE<strong></strong></strong>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="title-td" data-bind="text: approvertit"></td>
+                                <td class="value-td" data-bind="text: approverval"></td>
+                              </tr>
+                              <tr>
+                                <td class="title-td" data-bind="text: approverActtit"></td>
+                                <td class="value-td" data-bind="text: approverActval"></td>
+                              </tr> 
+                              <tr>
+                                <td class="title-td" data-bind="text: daysOldtit"></td>
+                                <td class="value-td" data-bind="text: daysOldval"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      </oj-collapsible> -->
+                        <oj-collapsible id="c3" expanded>
+                          <span slot="header"><i class="fas fa-bolt"></i>Actions</span>
+                          <table width="100%">
+                            <tbody>
+                              <tr>
+                                <td style="padding-top: 10px;padding-bottom: 10px;" class="value-td">
+                                  <div id="rejApp-btn">
+                                      <oj-button id="approveButton" class="approve-button" data-bind="click: approveRecord">
+                                          <span slot='startIcon' class="oj-fwk-icon oj-fwk-icon-checkmark"></span> APPROVE
+                                        </oj-button>
+                                  <oj-button style="margin-right: 10px;" id="rejectButton" class="reject-button" data-bind="click: rejectRecord">
+                                    <span slot='startIcon' class="oj-fwk-icon oj-fwk-icon-cross"></span> REJECT
+                                  </oj-button>
+                                </div>
+                                  <oj-text-area id="remark" placeholder="Remark" data-bind="value: remark"></oj-text-area>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </oj-collapsible>
+                    </oj-accordion>
+                    
+                    <login-status-bar style="bottom:0px!important"></login-status-bar>
+                  </div>
+            </div>
+            <div class="oj-flex-item oj-md-flex-direction-column approve-box-side-column oj-sm-only-hide"></div>
+          </div>
+      </oj-dialog>
+      <!-- <oj-button id="buttonOpener"  
+          data-bind="click: function() {
+            document.querySelector('#modalDialog1').open();
+          }">
+          Open Modal Dialog
+        </oj-button> -->
+    </div>
+</div>
+
+<script type="text/html" id="server_template">
+  <li class="rss-data-wrapper" data-bind="attr: {id: $data['rowIndex']}">
+      <div class="oj-flex">
+        <div class="oj-lg-12 oj-md-12 oj-sm-12">
+          <div class="oj-flex row">
+            <div class="oj-lg-11 oj-md-11 oj-sm-11">
+              <span title=".demo-email-icon-24" role="img" style="font-size:45px" class="far fa-list-alt"></span>
+                <h4 class="rss-item-header" data-bind="text: sRequisitionTitle_167.value"></h4>
+            </div>
+            <div class="oj-lg-1 oj-md-1 oj-sm-1">
+                <!-- arrow-alt-circle-right -->
+              <!-- <button class="proceedBtn">Proceed</button> -->
+            </div>
+          </div>
+          <div class="oj-flex row rss-item-row">
+            <div class="oj-lg-4 oj-md-4 oj-sm-12 rss-item">
+                <span class="data">
+                <b style="color:#555555;">Originator: </b>
+                <span style="color:#555555;" data-bind="text: sOriginator_202.value"></span>
+                </span>
+            </div>
+            <div class="oj-lg-4 oj-md-4 oj-sm-12 rss-item">
+                <span class="data">
+                  <b style="color:#555555;">Requisition Date: </b>
+                  <span style="color:#555555;" data-bind="text: dtStartDate_189.value"></span>
+                </span>
+            </div>
+            <div class="oj-lg-4 oj-md-4 oj-sm-12 rss-item">
+                <!-- <span class="data">
+                  <b style="color:#555555;">End Date: </b>
+                  <span style="color:#555555;" data-bind="text: dtEndDate_188.value"></span>
+                </span> -->
+            </div>
+          </div>
+          <div class="oj-flex">
+              <div class="oj-lg-4 oj-md-4 oj-sm-12 rss-item">
+                <span class="data">
+                <b style="color:#555555;">Amount: </b>
+                <span style="color:#555555;" data-bind="text: mnOrderAmount_205.value"></span>
+                </span>
+              </div>
+              <div class="oj-lg-4 oj-md-4 oj-sm-12 rss-item">
+                <span class="data">
+                <b style="color:#555555;">Requisition Number: </b>
+                <span style="color:#555555;" data-bind="text: mnOrderNumber_217.value"></span>
+                </span>
+                
+            </div><br><br>
+            <button class="proceedBtn">Approve / Reject</button><br><br>
+            
+          </div>
+
+        </div>
+      </div>
+    </li>
+</script>

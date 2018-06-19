@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>SAMRC Approvals</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1">
+    <link rel="icon" href="/css/images/favicon.ico" type="image/x-icon" />
+
+    <!-- This is the main css file for the default Alta theme -->
+<!-- injector:theme -->
+<link rel="stylesheet" href="/css/alta/4.1.0/web/alta.css" id="css" />
+<!-- endinjector -->
+    
+    <!-- This contains icon fonts used by the starter template -->
+    <link rel="stylesheet" href="/css/demo-alta-site-min.css" type="text/css"/>
+
+    <!-- This is where you would add any app specific styling -->
+    <link rel="stylesheet" href="/css/app.css" type="text/css"/>
+
+    <!-- Added FontAwesome to have more variety icons available -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+    
+  </head>
+  <body class="oj-web-applayout-body">
+
+
+    <div id="globalBody" style="background-color:black" class="oj-offcanvas-outer-wrapper oj-offcanvas-page">
+
+
+      <div id="pageContent" class="oj-web-applayout-page">
+        
+
+        <div role="main" style="margin-top:15px" class="oj-web-applayout-max-width oj-web-applayout-content" data-bind="ojModule: router.moduleConfig"></div>
+
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="/js/libs/require/require.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <!-- Added Loader script for a better look -->
+    <script type="text/javascript" src="/js/libs/pace/index.js"></script>
+    <script>
+    function getUrlParams( prop ) {
+    var params = {};
+    var search = decodeURIComponent( window.location.href.slice( window.location.href.indexOf( '?' ) + 1 ) );
+    var definitions = search.split( '&' );
+      console.log(search);
+    definitions.forEach( function( val, key ) {
+        var parts = val.split( '=', 2 );
+        params[ parts[ 0 ] ] = parts[ 1 ];
+    } );
+
+    return ( prop && prop in params ) ? params[ prop ] : params;
+}
+</script>
+  </body>
+
+</html>

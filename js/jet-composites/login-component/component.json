@@ -1,0 +1,28 @@
+{
+  "name": "login-component",
+  "displayName": "login-component",
+  "description": "Describe your component here",
+  "version": "1.0.0",
+  "jetVersion": "^4.1.0",
+  "properties": {
+    "config": {
+      "type":"{username:string,password:string,url:string,legacy:boolean}"
+    }, 
+    "isconnected":{
+      "type":"boolean",
+      "writeback": true
+    },
+    "cb": {
+      "type":"function"
+    }
+  },
+  "methods": {
+
+  }, 
+  "events": {
+
+  }, 
+  "slots": {
+
+  }
+}

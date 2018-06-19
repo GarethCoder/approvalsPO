@@ -1,0 +1,21 @@
+{
+  "name": "order-detail-grid",
+  "displayName": "order-detail-grid",
+  "description": "show JDE dataservice rows in horizontal scrolling grid",
+  "version": "1.0.0",
+  "jetVersion": "^4.1.0",
+  "properties": {
+    "data": {
+      "type": "Observable"
+    }
+  },
+  "methods": {
+
+  },
+  "events": {
+
+  },
+  "slots": {
+
+  }
+}

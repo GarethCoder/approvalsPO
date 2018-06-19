@@ -1,0 +1,22 @@
+
+<oj-label style="color:black;margin-top: 20px;" for="text-input">AIS Url</oj-label>
+<oj-input-text style="max-width:100%" id="text-input" value="{{$props.config.url}}"></oj-input-text>
+
+<oj-label style="color:black;margin-top: 20px;" for="text-input">JDE User ID</oj-label>
+<oj-input-text style="max-width:100%" id="text-input" value="{{$props.config.username}}"></oj-input-text>
+
+<oj-label style="color:black;margin-top: 20px;" for="text-input">JDE Password</oj-label>
+<oj-input-password style="max-width:100%" id="password" value="{{password}}"></oj-input-password>
+
+<!-- <oj-checkboxset value="{{$props.config.legacy}}" style="color:black;margin-top: 20px;" id="checkboxSetAgreeId" labelled-by="agreeId" >
+<oj-option id="agree" value="true">Legacy Mode</oj-option>
+</oj-checkboxset> -->
+
+<br/><br/>
+
+<oj-button data-bind="click:submitBtn">Submit</oj-button>
+
+<br/><br/>
+<p id="error" style="color:red; font-weight:bold;"></p>
+<p id="success" style="color:green; font-weight:bold;"></p>
+    

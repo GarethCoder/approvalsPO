@@ -1,0 +1,31 @@
+{
+  "name": "connection-manager",
+  "displayName": "connection-manager",
+  "description": "manage the status of AIS / E1 connection",
+  "version": "1.0.0",
+  "jetVersion": "^4.1.0",
+  "properties": {
+    "config": {
+      "type":"{username:string,password:string,url:string,legacy:boolean}"
+    }, 
+    "isconnected": {
+      "type": "observable", 
+      "writable":"true"
+    }
+  },
+  "methods": {
+    "connection":{
+      "description":"Query the active connection to E1",
+      "internalName":"_getConnection",
+      "params":[],
+      "return":"boolean"
+    }
+
+  }, 
+  "events": {
+
+  }, 
+  "slots": {
+
+  }
+}

@@ -1,0 +1,46 @@
+.pref-box {
+  width: 30%;
+  margin-bottom: 25px; }
+
+.side-column {
+  width: 35%; }
+
+.test {
+  margin-top: 100px; }
+
+.user-prefs-wrapper {
+  background: #ffffff;
+  border-radius: 3px; }
+
+.user-prefs-table {
+  width: 100%; }
+
+.user-prefs-key {
+  width: 50%;
+  border: 1px solid #efefef;
+  height: 45px;
+  font-weight: bold;
+  padding-left: 10px; }
+
+.user-prefs-value {
+  width: 50%;
+  padding-left: 10px; }
+
+.user-prefs-value-input {
+  margin-top: 4px;
+  max-width: 97%; }
+
+.user-prefs-row {
+  border: 1px solid #efefef; }
+
+.oj-inputtext.oj-disabled .oj-inputtext-input, .oj-inputpassword.oj-disabled .oj-inputpassword-input, .oj-textarea.oj-disabled .oj-textarea-input, .oj-inputtext-nocomp[disabled], .oj-inputpassword-nocomp[disabled], .oj-textarea-nocomp[disabled] {
+  height: 40px;
+  padding-left: 10px; }
+
+.user-prefs-header-wrapper {
+  margin-bottom: 20px; }
+
+.user-prefs-header {
+  font-weight: 500; }
+
+/*# sourceMappingURL=styles.css.map */

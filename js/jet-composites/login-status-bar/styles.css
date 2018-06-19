@@ -1,0 +1,7 @@
+login-status-bar:not(.oj-complete){
+  visibility: hidden;
+}
+
+login-status-bar{
+
+}

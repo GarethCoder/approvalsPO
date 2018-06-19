@@ -1,0 +1,30 @@
+<div class="oj-flex user-prefs-wrapper">
+    <div class="oj-flex-item oj-md-flex-direction-column user-prefs-side-column oj-sm-only-hide"></div>
+  <div class="oj-md-flex-direction-column oj-flex-item pref-box" style="padding:25px">
+    <div class="user-prefs-header-wrapper">
+        <h4 class="user-prefs-header">User Preferences</h4>
+    </div>
+    <table class="oj-lg-align-items-center user-prefs-table">
+        <tbody data-bind="foreach: userPrefs">
+          <tr class="hardLine user-prefs-row">
+              <td data-bind="text: key" class="oj-table-data-cell-padding user-prefs-key"></td>
+              <td class="oj-table-data-cell-padding user-prefs-value">
+                  <oj-input-text id="text-input-disabled" class="user-prefs-value-input" data-bind='value: $rawData.value' disabled="true"></oj-input-text>
+              </td>
+          </tr>
+        </tbody>
+    </table>
+    <!-- <h4>User Settings</h4>
+    <table>
+        <tbody data-bind="foreach: customPrefsControls">
+              <td data-bind="text: value" class="oj-table-data-cell-padding"></td>
+              <td class="oj-table-data-cell-padding">
+                  <input type="text" data-bind="attr: {id: value}" />
+              </td>
+        </tbody>
+  
+    </table> -->
+    </div>
+  <div class="oj-flex-item oj-md-flex-direction-column user-prefs-side-column oj-sm-only-hide"></div>
+</div>
+<login-status-bar></login-status-bar>

@@ -1,0 +1,91 @@
+/*
+    Document   : override
+    Created on : <date>
+    Author     : <author>
+    Description:
+        This is where any of your application specific styles should be included
+*/
+
+.fa-cogs, .fa-home, .fa-rss {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.samrc-nav-wrapper {
+  margin-top: 46px;
+}
+
+.copyright-txt {
+  padding-top: 6px;
+}
+
+a, .oj-navigationlist-app-level.oj-navigationlist-horizontal:not(.oj-navigationlist-icon-only) .oj-navigationlist-item.oj-selected:not(.oj-hover) .oj-navigationlist-item-icon, .oj-navigationlist-item.oj-selected {
+  color: #006b9c;
+}
+
+.white-body {
+  background: #ffffff;
+}
+
+.sidebar-logo {
+  width: 200px;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  height: 40px;
+  padding-top: 10px;
+  font-weight: 200;
+}
+
+.sidebar-subline {
+  color:#c1c1c1;
+  margin-left: 5px;
+}
+
+.oj-contrast-marker .oj-navigationlist-vertical .oj-navigationlist-item.oj-selected {
+  background: #115FA4;
+}
+
+.oj-web-applayout-offcanvas {
+  background: #eff2f5;
+  color: #313334;
+  border-right: 1px solid #d6dfe6;
+}
+
+.oj-panel-alt1 {
+  border-right: none;
+}
+
+.sidebar-loginfield {
+  color:black;
+  font-size:14px
+}
+
+.po-header {
+  font-weight: 500;
+}
+
+.oj-contrast-marker .oj-selected > a.oj-navigationlist-item-content > .oj-navigationlist-item-label {
+  color: #ffffff;
+}
+
+.oj-contrast-marker a.oj-navigationlist-item-content .oj-navigationlist-item-label {
+  color: #313334;
+}
+
+.oj-contrast-marker .oj-navigationlist-item.oj-selected .oj-navigationlist-item-icon {
+  color: #ffffff;
+}
+
+.oj-contrast-marker .oj-navigationlist-item.oj-hover:not(.oj-selected) {
+  background: #115FA4;
+}
+
+.oj-contrast-marker .oj-navigationlist-item-icon {
+ color: #313334;
+}
+
+.oj-navigationlist-vertical:not(.oj-navigationlist-icon-only) .oj-navigationlist-item {
+  border: none;
+}

@@ -1,0 +1,7 @@
+order-detail-grid:not(.oj-complete){
+  visibility: hidden;
+}
+
+order-detail-grid{
+
+}

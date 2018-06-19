@@ -1,0 +1,200 @@
+.blue-grad {
+  background-color: #007db5;
+  background: -webkit-linear-gradient(left top, #007db5, #498fc7);
+  background: -o-linear-gradient(bottom right, #007db5, #498fc7);
+}
+
+.side-column {
+  width: 30%;
+}
+
+.input-box {
+  width: 40%;
+  margin-top: 50px;
+}
+
+.myInputs, .oj-inputtext.oj-read-only .oj-inputtext-input, .oj-inputpassword.oj-read-only .oj-inputpassword-input, .oj-textarea.oj-read-only .oj-textarea-input, .oj-inputtext-nocomp[readonly], .oj-inputpassword-nocomp[readonly], .oj-textarea-nocomp[readonly] {
+  max-width: 100%;
+  margin-bottom: 20px !important;
+  margin-top: 10px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+
+.login-logo {
+  width: 65%;
+}
+
+.main-wrapper {
+  background-color: transparent;
+  border-color:transparent;
+}
+
+#connection-manager .oj-panel.oj-panel-alt1 {
+  background-color:transparent;
+  border-color:transparent;
+}
+
+.inputTextLabels {
+  color:#ffffff;
+  // font-weight: 300;
+}
+
+.inputValues {
+  margin-top: 30px;
+}
+
+.oj-read-only {
+  opacity:0.9 !important;
+}
+
+.myInputs .oj-inputtext-input, .myInputs .oj-inputpassword-input, .oj-inputtext.oj-read-only .oj-inputtext-input, .oj-inputpassword.oj-read-only .oj-inputpassword-input, .oj-textarea.oj-read-only .oj-textarea-input, .oj-inputtext-nocomp[readonly], .oj-inputpassword-nocomp[readonly], .oj-textarea-nocomp[readonly] {
+  height:40px;
+  color:#ffffff !important;
+  background-color: transparent;
+  padding-left: 10px;
+  border-color: #ffffff;
+  font-weight: 200;
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-animation: autofill 0s forwards;
+    animation: autofill 0s forwards;
+    color:#ffffff;
+}
+
+.steltix-button.oj-buttonset .oj-button-jqui.oj-default.oj-button-full-chrome,
+.steltix-button.oj-buttonset .oj-button-jqui.oj-focus-only.oj-button-full-chrome, .steltix-button.oj-button-jqui.oj-default.oj-button-full-chrome, .steltix-button.oj-button-jqui.oj-focus-only.oj-button-full-chrome,
+.steltix-button.oj-button.oj-default.oj-button-full-chrome .oj-button-button,
+.steltix-button.oj-button.oj-focus-only.oj-button-full-chrome .oj-button-button {
+  background-color: #006b9c;
+  background-image: none;
+  border-color: #006b9c;
+  color: #ffffff;
+  box-shadow: none;
+  text-shadow: none;
+  height: 35px;
+  width: 120px;
+}
+
+.steltix-button.oj-buttonset .oj-button.oj-default.oj-button-full-chrome .oj-button-icon,
+.steltix-button.oj-buttonset .oj-button.oj-focus-only.oj-button-full-chrome .oj-button-icon,
+.steltix-button.oj-button.oj-default.oj-button-full-chrome .oj-button-icon,
+.steltix-button.oj-button.oj-focus-only.oj-button-full-chrome .oj-button-icon {
+  color: #ffffff; }
+
+.steltix-button.oj-buttonset .oj-button-jqui.oj-hover.oj-button-full-chrome:not(.oj-active), .steltix-button.oj-button-jqui.oj-hover.oj-button-full-chrome:not(.oj-active),
+.steltix-button.oj-button.oj-hover.oj-button-full-chrome:not(.oj-active) .oj-button-button {
+  background-color: #0575a8;
+  background-image: none;
+  border-color: #0575a8;
+  color: #ffffff;
+  box-shadow: none;
+  text-shadow: none; 
+  height: 35px;
+  width: 120px;
+}
+
+.steltix-button.oj-buttonset .oj-button.oj-hover.oj-button-full-chrome:not(.oj-active) .oj-button-icon,
+.steltix-button.oj-button.oj-hover.oj-button-full-chrome:not(.oj-active) .oj-button-icon {
+  color: #ffffff; }
+
+.steltix-button.oj-buttonset .oj-button-jqui.oj-active.oj-button-full-chrome, .steltix-button.oj-button-jqui.oj-active.oj-button-full-chrome,
+.steltix-button.oj-button.oj-active.oj-button-full-chrome .oj-button-button {
+  background-color: #006b9c;
+  background-image: none;
+  border-color: #006b9c;
+  color: #ffffff;
+  box-shadow: none;
+  text-shadow: none; 
+  height: 35px;
+  width: 120px;
+}
+
+.steltix-button.oj-buttonset .oj-button.oj-active.oj-button-full-chrome .oj-button-icon,
+.steltix-button.oj-button.oj-active.oj-button-full-chrome .oj-button-icon {
+  color: #ffffff; }
+
+.steltix-button.oj-buttonset .oj-button-jqui.oj-selected.oj-button-full-chrome:not(.oj-disabled), .steltix-button.oj-button-jqui.oj-selected.oj-button-full-chrome:not(.oj-disabled),
+.steltix-button.oj-button.oj-selected.oj-button-full-chrome:not(.oj-disabled) .oj-button-button {
+  background-color: #006b9c;
+  background-image: none;
+  border-color: v;
+  color: #ffffff;
+  box-shadow: none;
+  text-shadow: none; 
+  height: 35px;
+  width: 120px;
+}
+
+.steltix-button.oj-buttonset .oj-button-jqui.oj-selected.oj-hover.oj-button-full-chrome:not(.oj-disabled), .steltix-button.oj-button-jqui.oj-selected.oj-hover.oj-button-full-chrome:not(.oj-disabled),
+.steltix-button.oj-button.oj-selected.oj-hover.oj-button-full-chrome:not(.oj-disabled) .oj-button-button {
+  background-color: #006b9c;
+  background-image: none;
+  border-color: #006b9c;
+  color: #ffffff;
+  box-shadow: none;
+  text-shadow: none; 
+  height: 35px;
+  width: 120px;
+}
+
+.steltix-button.oj-buttonset .oj-button.oj-selected.oj-button-full-chrome:not(.oj-disabled) .oj-button-icon,
+.steltix-button.oj-button.oj-selected.oj-button-full-chrome:not(.oj-disabled) .oj-button-icon {
+  color: #ffffff; }
+
+.steltix-button.oj-buttonset .oj-button.oj-selected.oj-hover.oj-button-full-chrome:not(.oj-disabled) .oj-button-icon,
+.steltix-button.oj-button.oj-selected.oj-hover.oj-button-full-chrome:not(.oj-disabled) .oj-button-icon {
+  color: #ffffff; }
+
+.steltix-button.oj-buttonset .oj-button-jqui.oj-disabled.oj-button-full-chrome, .steltix-button.oj-button-jqui.oj-disabled.oj-button-full-chrome,
+.steltix-button.oj-button.oj-disabled.oj-button-full-chrome .oj-button-button {
+  background-color: #006b9c;
+  border-color: #006b9c;
+  color: #ffffff;
+  opacity: 0.4; 
+  height: 35px;
+  width: 120px;
+}
+
+.steltix-button.oj-buttonset .oj-button.oj-disabled.oj-button-full-chrome .oj-button-icon,
+.steltix-button.oj-button.oj-disabled.oj-button-full-chrome .oj-button-icon {
+  color: #ffffff; }
+
+.steltix-button.oj-buttonset .oj-button-jqui.oj-disabled.oj-selected.oj-button-full-chrome, .steltix-button.oj-button-jqui.oj-disabled.oj-selected.oj-button-full-chrome,
+.steltix-button.oj-button.oj-disabled.oj-selected.oj-button-full-chrome .oj-button-button {
+  color: #ffffff;
+  background-color: #006b9c;
+  height: 35px;
+  width: 120px;  border-color: #006b9c; 
+
+}
+
+.steltix-button.oj-buttonset .oj-button.oj-disabled.oj-selected.oj-button-full-chrome .oj-button-icon,
+.steltix-button.oj-button.oj-disabled.oj-selected.oj-button-full-chrome .oj-button-icon {
+  color: #ffffff; }
+
+@keyframes autofill {
+    100% {
+        background: transparent;
+        color: #ffffff;
+    }
+}
+
+@-webkit-keyframes autofill {
+    100% {
+        background: transparent;
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 680px) {
+  .input-box {
+    width: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+<div style="margin: auto 50%">
+    <div class="lds-css ng-scope" data-bind="visible: loggingIn">
+        <div style="width:100%;height:100%" class="lds-eclipse">
+          <div></div>
+        </div>
+    </div>
+</div>
+<div id="connection-manager">
+    <div class="oj-panel oj-panel-alt1">
+        <!-- <oj-progress id="progressCircle" data-bind="visible: loggingIn" type="circle" style="width: 30px;height: 30px;" value="{{progressValue}}"></oj-progress> -->
+  
+        <form-builder callback="{{myHandler}}" title="Login" image="" inputvalues='[
+            {"label":"Username", "id": "user", "type":"text","value":"", "readonly":"false"},
+            {"label":"Password", "id": "password", "type":"password", "value":""}
+            ]'>
+        </form-builder>
+        
+        <br>
+
+        <span data-bind="text: msgText"></span>
+   
+    </div>
+
+</div>
+
